@@ -1,0 +1,70 @@
+# 请勿修改此文件
+# 请勿修改此文件
+# 请勿修改此文件
+# 定时从服务端拉取
+# 若需自定义请修改 Dictionary.Local.yml
+
+# 资源类型字典
+assetsType:
+# UI
+- key: ^UI/.*$
+  value: GameObject
+# 立绘
+- key: ^Game/Portrait/.*$
+  value: GameObject
+# 战斗小人
+- key: ^Battle/Human/.*$
+  value: GameObject
+# UI 特效，约会之类的
+- key: ^Effect/UI/.*$
+  value: GameObject
+# 奇遇
+- key: ^Texture/.*$
+  value: Sprite
+# 图标
+- key: ^SpriteAtlas/.*$
+  value: Sprite
+# 声音
+- key: ^Sounds/.*$
+  value: AudioClip
+
+# 补天资源桥接游戏 GO 字典
+bridgerGO:
+# 奇遇图
+- key: ^Texture/Fortuitous/.*$
+  value: /Game/UIRoot/Canvas/Root/UI/DramaFortuitous/Root/G:imgBG1
+# 全屏奇遇图
+- key: ^Texture/FortuiousBigBG/.*$
+  value: /Game/UIRoot/Canvas/Root/UI/DramaBigTexture/Root/G:imgBG1
+# 过场图
+- key: ^Texture/BG/.*$
+  value: /Game/UIRoot/Canvas/Root/Loading/LoadingBig/G:imgBG
+
+# 资源子节点字典
+goChild:
+# 立绘
+- key: ^Game/Portrait/.*$
+  value: sprite
+# NPC
+- key: ^Game/NPC/Root/.*$
+  value: sprite
+# 双修
+- key: ^Effect/UI/Shuangxiu(yuehui)?$
+  value: Sprite
+# 战斗小人后背
+- key: ^Battle/Human/BackBack/.*$
+  value: Root
+# 战斗小人帽子
+- key: ^Battle/Human/Hat/.*$
+  value: maozi
+# 约会图
+- key: ^Effect/UI/duquYuehui.*$
+  value: lundao
+# 论道
+- key: ^Effect/UI/duquLundao$
+  value: lundao
+# 思考
+- key: ^Effect/UI/duquSikao$
+  value: xiaoren
+
+# 最后更新时间 2021-08-14 02:58:36
